@@ -11,7 +11,8 @@ cv2.startWindowThread()
 lifejacket = cv2.imread('lifejacket.png', cv2.IMREAD_UNCHANGED)
 
 # open webcam video stream
-cap = cv2.VideoCapture(0)
+# different for each cpu 0, 1, 2 are all viable and should be changed if its showing an error.
+cap = cv2.VideoCapture(1) 
 
 # the output will be written to output.avi
 out = cv2.VideoWriter(
